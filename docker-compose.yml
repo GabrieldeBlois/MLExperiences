@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+    jupyterlab:
+        build:
+            context: ./jupyterlab
+        volumes:
+            - ./src:/home/jovyan/work
+        ports:
+            - 8888:8888
+        environment:
+            - AWS_DEFAULT_REGION=us-east-1
