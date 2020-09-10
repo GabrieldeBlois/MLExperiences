@@ -7,5 +7,3 @@ services:
             - ./src:/home/jovyan/work
         ports:
             - 8888:8888
-        environment:
-            - AWS_DEFAULT_REGION=us-east-1
